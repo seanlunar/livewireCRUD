@@ -7,6 +7,7 @@ USE App\Livewire\CreateCustomer;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StudentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,4 @@ Route::get('editcustomer/{customer}', EditCustomer::class);
 Route::resource('projects', ProductController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('students', [StudentsController::class, 'index']);

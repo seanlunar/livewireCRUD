@@ -24,6 +24,9 @@
                         <button wire:navigate href="/customers/{{ $customer->id }}" class="btn btn-primary btn-sm">view</button>
                         <button wire:navigate href="/editcustomer/{{ $customer->id }}" class="btn btn-success btn-sm">edit</button>
                         <button wire:click='deleteCustomer({{ $customer->id }})' class="btn btn-danger btn-sm">delete</button>
+                        {{-- <button wire:navigate href="/customers/{{ $customer->id }}" class="btn btn-primary btn-sm">view</button>
+                        <button wire:navigate href="/editcustomer/{{ $customer->id }}" class="btn btn-success btn-sm">edit</button>
+                        <button wire:click='deleteCustomer({{ $customer->id }})' class="btn btn-danger btn-sm">delete</button> --}}
 
                     </td>
                 </tr>
